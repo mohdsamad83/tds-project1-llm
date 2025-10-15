@@ -7,7 +7,7 @@ app = FastAPI()
 async def notify(request: Request):
     data = await request.json()
     # BEGINNER: Edit this secret to your actual secret from Google Form!
-    YOUR_SECRET = "replace-this-with-your-secret"
+    YOUR_SECRET = "7702826245"
     if data.get("secret") != YOUR_SECRET:
         return JSONResponse(content={"status": "Unauthorized"}, status_code=401)
     # Print or log the received data for debugging
